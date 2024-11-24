@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 120px;
+    background-color: white;
+}
+
+
+.icons{
+    width: 150px;
+    height: 50px;
+    /* border: 1px solid black; */
+}
+
+.icon{
+    width: 50px;
+    /* border: 1px solid black; */
+    display: grid;
+    place-items: center;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.icon i{
+    color: black;
+    /* border: 1px solid black; */
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+}
+
+/* crousel starts here */
+
+.carousel-inner{
+    background-image: url('./images/slide-bg-1.webp');
+    background-size: cover;
+}
+
+
+@media screen and (width>1000px){
+    .navbar-collapse{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (width<800px){
+    .disapear{
+        display: none;
+    }
+}
+
+.middle-section{
+    height: 500px;
+    /* border: 1px solid black; */
+}
+
+.middle-section .row{
+    height: 100%;
+}
+
+.middle-section .row div{
+    height: 100%;
+}
+
+.middle-section-text{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    justify-content: space-around;
+}
+
+.middle-section-text span{
+    font-size: 2rem;
+}
+
+.middle-section-text button{
+    width: 200px;
+    height: 50px;
+    background-color: orangered;
+    color: white;
+    font-weight: 500;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+.middle-section-text button:hover{
+    background-color: black;
+}
+
+@media screen and (width<992px) {
+    .middle-section{
+        height: 700px;
+    }
+}
+
+/* new arrival starts here */
+.new-arrival{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.new-arrival-cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.new-arrival-card{
+    min-width: 300px;
+    min-height: 500px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-arrival-card p{
+    font-size: 1.3rem;
+}
+
+@media screen and (width<992px) {
+    .new-arrival{
+        margin-top: 800px;
+    }
+}
+
+/* banner starts here */
+
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url('./images/01.webp');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    margin-top: 100px;
+}
+
+.banner-text{
+    width: 50%;
+    height: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner-text p{
+    font-size: 1.3rem;
+}
+
+.banner-text button{
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: none;
+}
+
+/* featured-products starts here */
+.featured-products{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.featured-products-cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.featured-products-card{
+    min-width: 300px;
+    min-height: 500px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured-products-card p{
+    font-size: 1.3rem;
+}
+
+@media screen and (width<992px) {
+    .featured-products{
+        margin-top: 100px;
+    }
+}
+
+/* chair sectin starts here */
+
+.chairs{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid black; */
+    margin-top: 100px;
+}
+
+.chairs .row{
+    height: 100%;
+}
+
+.chair1{
+    background-image: url('./images/1.webp');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.chair2{
+    background-image: url('./images/2.webp');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.chair-text{
+    width: 70%;
+    height: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.chair-text p{
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.chair-text h1{
+    font-size: 3rem;
+}
+
+.chair-text a{
+    color: white;
+}
+
+@media screen and (width<992px){
+    .chairs{
+        height: 800px;
+    }
+}
+
+/* banner2 starts here */
+
+.banner2{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./images/02.webp');
+    background-size: cover;
+
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.banner2-text{
+    width: 60%;
+    height: 80%;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.banner2-text :nth-child(1){
+    font-size: 5rem;
+}
+
+.banner2-text :nth-child(2){
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.banner2-text :nth-child(3){
+    font-size: 1.5rem;
+}
+
+.banner2-text :nth-child(4){
+    font-size: 1.5rem;
+}
+
+.banner2-text p{
+    margin: 0px;
+}
+
+@media screen and (width<500px) {
+    .banner2-text{
+        width: 100%;
+    }
+    .banner2-text :nth-child(1){
+        font-size: 2rem;
+    }
+
+    .banner2-text :nth-child(2){
+        font-size: 1.2rem;
+    }
+    .banner2-text p{
+        font-size: 20px;
+    }
+}
+
+/* contact us starts here */
+
+.contact-us{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+.contact-us .container{
+    height: 300px;
+}
+
+.contact-us .container .row{
+    height: 100%;
+}
+
+.contact-us-img{
+    width: 47%;
+    height: 85%;
+}
+
+.contact-us h1{
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+
+.contact-us p{
+    font-size: 1.3rem;
+    margin: 0;
+    text-align: center;
+}
+
+.contact-us input{
+    margin: 0;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.contact-us button{
+    width: 150px;
+    height: 50px;
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+
+@media screen and (width<500px) {
+    .contact-us{
+        height: 600px;
+    }
+
+    .contact-us .container{
+        height: 500px;
+        padding: 0px;
+        /* border: 1px solid black; */
+    }
+}
+
+/* brands start here */
+
+.brands{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    /* padding: 100px; */
+    justify-content: center;
+}
+
+.brand{
+    min-width: 200px;
+    min-height: 100px;
+    /* border: 1px solid black; */
+}
+
+@media screen and (width<1000px) {
+    .brands{
+        margin-top: 300px;
+    }
+}
+
+@media screen and (width<800px) {
+    .brands{
+        margin-top: 200px;
+    }
+}
+
+@media screen and (width<500px) {
+    .brands{
+        margin-top: 50px;
+    }
+}
+
+/* footer starts here */
+
+footer{
+    margin-top: 100px;
+    padding: 50px;
+}
+
+footer i{
+    font-size: 2rem;
+}
